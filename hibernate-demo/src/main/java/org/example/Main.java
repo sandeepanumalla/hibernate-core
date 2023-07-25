@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.model.Address;
 import org.example.model.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -25,6 +26,16 @@ public class Main {
                 .build();
 
         session.save(student);
+//        transaction.commit();
+
+        Address ad = Address.builder()
+                .street("statestreet")
+                .city("lamington")
+                .isOpen(true)
+                .x(123.23)
+                .build();
+
+        session.save(ad);
         transaction.commit();
 
         session.close();
