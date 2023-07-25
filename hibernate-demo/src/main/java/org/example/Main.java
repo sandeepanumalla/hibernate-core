@@ -25,7 +25,7 @@ public class Main {
                 .address("Mumbai")
                 .build();
 
-        session.save(student);
+//        session.save(student);
 //        transaction.commit();
 
         Address ad = Address.builder()
@@ -35,8 +35,14 @@ public class Main {
                 .x(123.23)
                 .build();
 
-        session.save(ad);
-        transaction.commit();
+
+
+//        session.save(ad);
+        Address address = (Address) session.get(Address.class, 1L);
+        Address address2 = (Address) session.get(Address.class, 2L);
+        System.out.println(address);
+        System.out.println(address2);
+//        transaction.commit();
 
         session.close();
         sessionFactory.close();

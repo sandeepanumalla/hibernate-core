@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../../Durgesh servlets and JSP/jsp-servlet-jdbc-mysql-crud-example/pom.xml" />
+        <option value="$PROJECT_DIR$/../../spring boot/demo1/pom.xml" />
       </list>
     </option>
   </component>
