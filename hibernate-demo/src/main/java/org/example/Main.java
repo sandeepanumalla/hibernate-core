@@ -37,12 +37,10 @@ public class Main {
 
 
 
-//        session.save(ad);
         Address address = (Address) session.get(Address.class, 1L);
         Address address2 = (Address) session.get(Address.class, 2L);
         System.out.println(address);
         System.out.println(address2);
-//        transaction.commit();
 
         session.close();
         sessionFactory.close();

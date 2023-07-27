@@ -17,8 +17,8 @@ public class Answer {
     private long id;
     private String answer;
 
-
+    @ManyToOne
+    @JoinColumn(name = "question_question_id")
     private Question question;
-
 
 }

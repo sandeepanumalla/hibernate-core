@@ -29,6 +29,5 @@ public class Example {
 
         session.close();
         factory.close();
-
     }
 }
