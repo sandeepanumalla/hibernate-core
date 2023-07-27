@@ -25,6 +25,7 @@ public class Example {
                 .answer("Java is programming Language")
                 .build();
 
+
         session.save(q1);
 
         session.close();

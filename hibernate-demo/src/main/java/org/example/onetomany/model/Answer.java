@@ -23,7 +23,7 @@ public class Answer {
     private String answer;
 
 
-    @ManyToOne()
+    @ManyToOne
     @JoinColumn(name = "question_id")
     private Question question;
 }
